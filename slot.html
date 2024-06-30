@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Master</title>
+    <link rel="stylesheet" href="mine.css">
+</head>
+<body>
+    <div class="slot-machine">
+        <h1>Slot Machine Game</h1>
+        <div id="slot1" class="slot">0</div>
+        <div id="slot2" class="slot">0</div>
+        <div id="slot3" class="slot">0</div>
+        
+        <div class="guess-buttons">
+            <button onclick="makeGuess('❤️')">❤️</button>
+            <button onclick="makeGuess('♦️')">♦️</button>
+            <button onclick="makeGuess('♠️')">♠️</button>
+        
+        </div>
+        
+        <div class="guess-section">
+            <p>Your Guesses: <span id="playerGuessDisplay">-</span></p>
+        </div>
+        
+       
+        
+        <br>
+        <button onclick="spin()">Spin</button>
+        <p id="message"></p>
+    </div>
+
+    <script src="mine.js"></script>
+</body>
+</html>
