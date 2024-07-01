@@ -11,12 +11,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body stretches to at least the height of the viewport */
 }
 
 footer {
     background-color: #111;
     color: #fff;
     padding: 20px 0;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    width: 100%;
 }
 
 .footer-container {
@@ -24,8 +29,7 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 0 auto; /* Center the container horizontally */
 }
 
 .footer-section {
