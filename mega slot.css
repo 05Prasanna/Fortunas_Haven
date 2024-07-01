@@ -8,6 +8,18 @@ body {
     color: white;
     font-family: Arial, sans-serif;
     background-image: url(mega.jpg);
+    background-position: center;
+}
+.contaner {
+    background: rgba(0, 0, 0);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    margin: 20px;
+    animation: fadeIn 1s;
 }
 
 .slot-machine {
@@ -25,7 +37,7 @@ body {
     justify-content: center;
     font-size: 2em;
     margin: 0 10px;
-    background-color: #444;
+    background-color: #ffffff;
 }
 
 button {
@@ -45,4 +57,7 @@ button:hover {
 #result {
     font-size: 1.5em;
     margin-top: 20px;
+}
+.cont{
+    background-color: white;
 }
