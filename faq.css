@@ -1,0 +1,76 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(45deg, #ff6f00, #ffca28);
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+    color: #ff6f00;
+}
+
+.faq {
+    margin-top: 20px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-title {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #ff6f00;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.faq-title:hover {
+    background: #e65100;
+}
+
+.faq-content {
+    display: none;
+    padding: 15px;
+    border-radius: 8px;
+    background: #eeeeee;
+    color: #333;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+}
+
+.faq-item input[type="checkbox"] {
+    display: none;
+}
+
+.faq-item input[type="checkbox"]:checked ~ .faq-content {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
