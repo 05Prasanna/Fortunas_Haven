@@ -58,8 +58,5 @@ function startNewGame() {
 // andharbhar.js
 
 function exitGame() {
-   
-    document.getElementById('gameArea').style.display = 'none';
-    alert('Thank you for playing Andar Bahar Game!');
-   
+    history.back();
 }
