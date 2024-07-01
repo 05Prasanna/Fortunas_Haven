@@ -1,11 +1,9 @@
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background: linear-gradient(45deg, #ff6f00, #ffca28);
-    margin: 0;
-    padding: 0;
     
 }
-
+   
 .container {
     max-width: 800px;
     margin: 50px auto;
