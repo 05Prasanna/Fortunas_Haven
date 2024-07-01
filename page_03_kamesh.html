@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Cards with Buttons</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    max-width: 800px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 70px;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.card p {
+    font-size: 1em;
+    margin: 0 0 20px;
+}
+
+.card button {
+    background-color: #007BFF;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 90px;
+    font-size: 1em;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <h2>Card Title 1</h2>
+            <p>This is a description for the first card. It contains some text about the content.</p>
+            <button>PLAY</button>
+        </div>
+        <div class="card">
+            <h2>Card Title 2</h2>
+            <p>This is a description for the second card. It contains some text about the content.</p>
+            <button>PLAY</button>
+        </div>
+        <div class="card">
+            <h2>Card Title 3</h2>
+            <p>This is a description for the third card. It contains some text about the content.</p>
+            <button>PLAY</button>
+        </div>
+        <div class="card">
+            <h2>Card Title 4</h2>
+            <p>This is a description for the fourth card. It contains some text about the content.</p>
+            <button>PLAY</button>
+        </div>
+    </div>
+</body>
+</html>
