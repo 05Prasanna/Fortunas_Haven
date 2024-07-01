@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    
 }
 
 .navbar {
@@ -67,3 +69,15 @@ body {
 .navbar-search button:hover {
     background-color: #444;
 }
+
+bhai{
+
+    height: 70px;
+    width: 320px;
+    align: center;
+    justify-content:center;
+    align-items: center;
+    margin: 21px;
+    background: linear-gradient(to bottom, #ff9933 0%, #ff9999 100%);
+}
+
