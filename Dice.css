@@ -6,32 +6,14 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     font-family: Arial, sans-serif;
+    background-image: url(bg\ images/dice.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-}
-
-#background-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-}
 
 .box {
-    background-color: brown;
+    background-color: rgb(34, 32, 32);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -56,6 +38,7 @@ body {
 .dice-value {
     font-size: 24px;
     margin-bottom: 10px;
+    color: white;
 }
 
 .dice-img {
@@ -76,7 +59,7 @@ body {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #007bff;
+    background-color: #f10606;
     color: white;
     border: none;
     border-radius: 5px;
@@ -85,14 +68,12 @@ body {
     margin-top: 20px;
 }
 
-.roll-button:hover {
-    background-color: #0056b3;
-}
+
 .exit-button {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #dc3545;
+    background-color: #df0d22;
     color: white;
     border: none;
     border-radius: 5px;
@@ -104,10 +85,12 @@ body {
 .sum-display {
     font-size: 24px;
     margin-top: 20px;
+    color: white;
 }
 
 .result-display {
     font-size: 24px;
     margin-top: 10px;
     font-weight: bold;
+    color: white;
 }
