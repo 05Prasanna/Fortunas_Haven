@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 2500px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+</style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <img src="casino_images/casino_1.jpeg" alt="Image 1">br
+            <img src="casino_images/casino_2.jpeg" alt="Image 2">br
+            <img src="casino_images/casino_3.jpeg" alt="Image 3">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <script>
+        // script.js
+
+let slideIndex = 0;
+
+function showSlides(n) {
+    const slides = document.querySelectorAll('.slides img');
+    if (n >= slides.length) {
+        slideIndex = 0;
+    } else if (n < 0) {
+        slideIndex = slides.length - 1;
+    }
+    document.querySelector('.slides').style.transform = `translateX(${-slideIndex * 100}%)`;
+}
+
+function moveSlide(n) {
+    slideIndex += n;
+    showSlides(slideIndex);
+}
+
+// Initialize the first slide
+showSlides(slideIndex);
+
+    </script>
+</body>
+</html>
