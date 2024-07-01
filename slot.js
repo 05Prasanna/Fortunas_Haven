@@ -72,3 +72,6 @@ function updateResult(result) {
 function setMessage(msg) {
     document.getElementById('message').textContent = msg;
 }
+function exitGame() {
+    history.back();
+}
