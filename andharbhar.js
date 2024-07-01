@@ -55,3 +55,11 @@ function startNewGame() {
     document.getElementById('selectedCard').innerHTML = '';
     pickedCard = '';
 }
+// andharbhar.js
+
+function exitGame() {
+   
+    document.getElementById('gameArea').style.display = 'none';
+    alert('Thank you for playing Andar Bahar Game!');
+   
+}
