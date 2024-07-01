@@ -6,13 +6,21 @@
 <title>Login Page</title>
 <link rel="stylesheet" href="loging.css">
 </head>
+<style>
+    body {
+  background-image: url("casino_images/login.jpg");
+}
+</style>
 <body>
+    
 <div class="container">
+    
     <div class="logo">
-        <img src="Homepage IMG/LOGO TRANSPARENT.png" alt="Logo">
+    <img src="bg images/Fortunas Haven.png" alt="logo" width="auto" height="80px">
+
     </div>
     <h2>Login</h2>
-    <form>
+    <form action="/index.html">
         <div class="form">
             <label for="username"><h3>Username</h3></label>
             <input type="text" id="username" name="username" placeholder="Enter your username" required>
@@ -21,12 +29,15 @@
             <label for="password"><h3>Password</h3></label>
             <input type="password" id="password" name="password" placeholder="Enter your password" required>
         </div>
+
         <div class="form forgot-password">
             <a href="forgotpassword.html">Forgot password?</a>
         </div>
-        <input type="submit" value="Login">
+
+        <input type="submit" value="Login" a href="index.html" ></a>
+
         <div class="back-button">
-            <a href="welcome.html">Back</a>
+            <a href="index.html">Back</a>
         </div>
     </form>
 </div>
