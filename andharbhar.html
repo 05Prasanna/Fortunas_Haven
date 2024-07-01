@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andar Bahar Game</title>
+    <link rel="stylesheet" href="andharbhar.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Game Area -->
+    <div id="gameArea" class="container">
+        <h1>Andar Bahar Game</h1>
+        <button class="btn" onclick="startGame()">Start Game</button>
+        <div id="deckContainer" class="hidden"></div>
+        <select id="side" class="dropdown">
+            <option value="andar">Andar</option>
+            <option value="bahar">Bahar</option>
+        </select>
+        <button class="btn" onclick="chooseSide()">Choose Side</button>
+    </div>
+
+    <!-- Result Area -->
+    <div id="resultArea" class="container hidden">
+        <h2 id="result"></h2>
+        <div id="selectedCard" class="cards"></div>
+        <button class="btn" onclick="startNewGame()">Start New Game</button>
+    </div>
+
+    <script src="andharbhar.js"></script>
+</body>
+</html>
