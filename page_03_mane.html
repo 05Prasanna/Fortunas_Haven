@@ -3,88 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>4 Cards with Buttons and Icons</title>
+
     <title>4 Cards with Buttons</title>
     <link rel="stylesheet" href="styles.css">
-    
+    <link rel="stylesheet" href="navbar.css">
     <style>
         body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
-}
-
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
-    max-width: 800px;
-}
-
-.card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 70px;
-    text-align: center;
-}
-
-.card h2 {
-    font-size: 1.5em;
-    margin: 0 0 10px;
-}
-
-.card p {
-    font-size: 1em;
-    margin: 0 0 20px;
-}
-
-.card button {
-    background-color: #007BFF;
-    border: none;
-    border-radius: 20px;
-    color: white;
-    cursor: pointer;
-    padding: 10px 90px;
-    font-size: 1em;
-}
-
-.card button:hover {
-    background-color: #0056b3;
-}
-
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url(bg\ images/MENU.png); 
+            background-repeat: no-repeat;
+            background-size: cover;/* Ensure the body stretches to at least the height of the viewport */
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 20px 30px;
+        }
+        
+        .navbar-brand a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+        
+        .navbar-nav {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            gap: 50px;
+        }
+        
+        .navbar-nav li {
+            margin-left: 20px;
+        }
+        
+        .navbar-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        
+        .navbar-nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .navbar-search {
+            display: flex;
+            align-items: center;
+        }
+        
+        .navbar-search input {
+            padding: 5px;
+            font-size: 1em;
+            border: none;
+            border-radius: 3px;
+            margin-right: 10px;
+        }
+        
+        .navbar-search button {
+            padding: 5px 10px;
+            font-size: 1em;
+            border: none;
+            border-radius: 3px;
+            background-color: #555;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        .navbar-search button:hover {
+            background-color: #444;
+        }
+        
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            padding: 20px;
+            margin: auto; /* Center the container horizontally */
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .card img {
+            width: 100px; /* Adjust the size of the image/icon as needed */
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        
+        .card p {
+            font-size: 0.9em;
+            margin: 0 0 10px;
+            color: #666;
+        }
+        
+        .card button {
+            background-color: #007BFF;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+            padding: 10px 30px;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+        
+        .card button:hover {
+            background-color: #0056b3;
+        }
+        
+        footer {
+            background-color: #111;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: auto; /* Pushes the footer to the bottom */
+            width: 100%;
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            
+            margin: 0 auto; /* Center the container horizontally */
+        }
+        
+        .footer-section {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+        
+        .footer-section h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        .footer-section p {
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .social-icons a img {
+            width: 30px;
+            height: 30px;
+            filter: invert(100%);
+        }
+        
+        .footer-section form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-section input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        
+        .footer-section button {
+            background-color: #007BFF;
+            border: none;
+            color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .footer-section button:hover {
+            background-color: #0056b3;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #000;
+        }
+        
+        .footer-bottom p {
+            margin: 0;
+            font-size: 0.8em;
+        }
     </style>
 </head>
 <body>
 
-    
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="#">Brand</a> <!--put logo here-->
+        </div>
+        <ul class="navbar-nav">
+            <li><a href="index.html">Home</a>  </li>
+            <li><a href="about_us.html">About</a>  </li>
+            <li><a href="T$C.html">Terms and Conditions </a>  </li>
+            <li><a href="faq.html">FAQ </a>  </li>
+        </ul>
+        <div class="navbar-search">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </nav>
+
 
 
     <div class="card-container">
         <div class="card">
-            <h2>Card Title 1</h2>
-            <p>This is a description for the first card. It contains some text about the content.</p>
-            <button>PLAY</button>
+            <img src="bg images/slot.png" alt="Icon 1">
+            <p>Slot game: Spin reels to match symbols and win prizes.</p>
+            <button onclick="startGame1()">PLAY</button>
         </div>
         <div class="card">
-            <h2>Card Title 2</h2>
-            <p>This is a description for the second card. It contains some text about the content.</p>
-            <button>PLAY</button>
+            <img src="bg images/rock-paper-scissors.png" alt="Icon 2">
+            <p>Rock-paper-scissors: Hand game with three shapes.</p>
+            <button onclick="startGame2()">PLAY</button>
         </div>
         <div class="card">
-            <h2>Card Title 3</h2>
-            <p>This is a description for the third card. It contains some text about the content.</p>
-            <button>PLAY</button>
+            <img src="bg images/dice.png" alt="Icon 3">
+            <p>Sum of dice game: Roll dice and bet on outcomes.</p>
+            <button onclick="startGame3()">PLAY</button>
         </div>
         <div class="card">
-            <h2>Card Title 4</h2>
-            <p>This is a description for the fourth card. It contains some text about the content.</p>
-            <button>PLAY</button>
+            <img src="bg images/poker.png" alt="Icon 4">
+            <p>Andhar Bahar: Indian card game of chance.</p>
+            <button onclick="startGame4()">PLAY</button>
         </div>
     </div>
-    
+    <div class="footer">
+        <iframe src="footer.html" frameborder="0" height="500" style="width: 100%;"></iframe>
+      </div>
 </body>
 </html>
