@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  #game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .hand {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hand img {
+    width: 80px; /* Adjust card width */
+    height: auto;
+    margin: 0 5px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #game-status {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
