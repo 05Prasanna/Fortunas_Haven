@@ -7,12 +7,7 @@
     <link rel="stylesheet" href="andharbhar.css">
 </head>
 <body>
-    <!-- Background Video -->
-    <video autoplay muted loop id="backgroundVideo">
-        <source src="" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
+    
     <!-- Game Area -->
     <div id="gameArea" class="container">
         <h1>Andar Bahar Game</h1>
@@ -23,6 +18,8 @@
             <option value="bahar">Bahar</option>
         </select>
         <button class="btn" onclick="chooseSide()">Choose Side</button>
+        <!-- Exit Button -->
+        <button class="btn" onclick="exitGame()">Exit Game</button>
     </div>
 
     <!-- Result Area -->
