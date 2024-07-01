@@ -18,3 +18,7 @@ function playGame(playerChoice) {
 
     document.getElementById('result').textContent = `You chose ${playerChoice}. Computer chose ${computerChoice}. ${result}`;
 }
+
+function resetGame() {
+    document.getElementById('result').textContent = 'Choose your move...';
+}

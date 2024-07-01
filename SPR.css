@@ -5,7 +5,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f4;
+    background-image: url(bg\ images/SPR.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {

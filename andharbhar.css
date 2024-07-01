@@ -1,33 +1,20 @@
-/* General body styling */
+
 body {
     font-family: Arial, sans-serif;
-    background:#fcb69f;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     overflow: hidden;
-}
-
-/* Background video styling */
-#backgroundVideo {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-    background: no-repeat;
+    background-image: url('bg images/AB.jpeg');
     background-size: cover;
+    background-position: center;
 }
 
-/* Container styling */
+
 .container {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgb(226, 46, 46);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -35,7 +22,7 @@ body {
     width: 80%;
     max-width: 500px;
     margin: 20px;
-    animation: fadeIn 2s;
+    animation: fadeIn 1s;
 }
 
 @keyframes fadeIn {
@@ -58,7 +45,7 @@ h1, h2 {
 
 /* Button styling */
 .btn {
-    background-color: #007bff;
+    background-color: #000000;
     color: white;
     border: none;
     padding: 15px 25px;
@@ -70,7 +57,7 @@ h1, h2 {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #000000;
 }
 
 /* Dropdown styling */
