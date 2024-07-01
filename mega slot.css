@@ -9,6 +9,7 @@ body {
     font-family: Arial, sans-serif;
     background-image: url(mega.jpg);
     background-position: center;
+
 }
 .contaner {
     background: rgba(0, 0, 0);
@@ -20,6 +21,7 @@ body {
     max-width: 500px;
     margin: 20px;
     animation: fadeIn 1s;
+
 }
 
 .slot-machine {
