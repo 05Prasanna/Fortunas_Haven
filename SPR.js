@@ -22,3 +22,6 @@ function playGame(playerChoice) {
 function resetGame() {
     document.getElementById('result').textContent = 'Choose your move...';
 }
+function exitGame() {
+    history.back();
+}

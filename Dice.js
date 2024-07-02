@@ -12,8 +12,8 @@ function rollDice(){
     document.getElementById("dice1Value").innerHTML = dice1Value;
     document.getElementById("dice2Value").innerHTML = dice2Value;
 
-    document.getElementById("dice1").src = "img/" + dice1Value + ".jpg";
-    document.getElementById("dice2").src = "img/" + dice2Value + ".jpg";
+    document.getElementById("dice1").src = "bg images/" + dice1Value + ".jpg";
+    document.getElementById("dice2").src = "bg images/" + dice2Value + ".jpg";
 
     document.getElementById("sumDisplay").innerHTML = "Sum: " + sum;
 
@@ -22,4 +22,7 @@ function rollDice(){
     } else {
         document.getElementById("resultDisplay").innerHTML = "You lose!";
     }
+}
+function exitGame() {
+    history.back();
 }
