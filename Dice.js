@@ -1,4 +1,4 @@
-function rollDice(){
+function rollDice(){//logic of the game
     var prediction = parseInt(document.getElementById("predictionInput").value);
     if (prediction < 2 || prediction > 12) {
         document.getElementById("resultDisplay").innerHTML = "Please enter a valid prediction between 2 and 12.";
@@ -22,6 +22,7 @@ function rollDice(){
     } else {
         document.getElementById("resultDisplay").innerHTML = "You lose!";
     }
+    // to exit from game
 }
 function exitGame() {
     history.back();

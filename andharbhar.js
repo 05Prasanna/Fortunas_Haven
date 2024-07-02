@@ -1,4 +1,4 @@
-
+// variables 
 let deck = [];
 let pickedCard = '';
 let chosenSide = '';
@@ -17,7 +17,7 @@ function createDeck() {
     deck.sort(() => Math.random() - 0.5);
 }
 
-
+// it is used to start the shuffal the numbers i.e cards
 function startGame() {
     createDeck();
     pickedCard = deck[Math.floor(Math.random() * deck.length)]; // Pick a random card from the deck
@@ -25,7 +25,7 @@ function startGame() {
     document.getElementById('deckContainer').innerHTML = `<div class="card">${pickedCard.card}</div>`;
 }
 
-
+// thei is to chose the side from two sides
 function chooseSide() {
     chosenSide = document.getElementById('side').value;
 
@@ -46,7 +46,7 @@ function chooseSide() {
     
     chosenSide = '';
 }
-//all the functions which are used
+//all the functions which are from which the buttons are working
 
 function startNewGame() {
     document.getElementById('gameArea').classList.remove('hidden');

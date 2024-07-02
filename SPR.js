@@ -1,4 +1,4 @@
-function playGame(playerChoice) {
+function playGame(playerChoice) {// logic of the game
     const choices = ['rock', 'paper', 'scissors'];
     const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
@@ -18,10 +18,11 @@ function playGame(playerChoice) {
 
     document.getElementById('result').textContent = `You chose ${playerChoice}. Computer chose ${computerChoice}. ${result}`;
 }
-
+// to reset the game
 function resetGame() {
     document.getElementById('result').textContent = 'Choose your move...';
 }
+//exit game
 function exitGame() {
     history.back();
 }

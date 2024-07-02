@@ -1,11 +1,11 @@
-const symbols = ['❤️', '♦️', '♠️', ];
+const symbols = ['❤️', '♦️', '♠️', ];// symbols as a variable
 let playerGuesses = [];
-
+// used random function to chosr random symbol
 function getRandomSymbol() {
     const randomIndex = Math.floor(Math.random() * symbols.length);
     return symbols[randomIndex];
 }
-
+// it is the guess of the player
 function makeGuess(symbol) {
     if (!symbols.includes(symbol)) {
         alert('Invalid guess. Please choose from ❤️, ♦️, ♠️.');
