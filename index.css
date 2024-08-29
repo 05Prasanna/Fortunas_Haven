@@ -3,8 +3,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #000;
 }
 
 .navbar {
@@ -27,10 +29,6 @@ body {
     margin: 0;
     padding: 0;
     gap: 30px;
-}
-
-.navbar-nav li {
-    margin-left: 20px;
 }
 
 .navbar-nav a {
@@ -70,14 +68,127 @@ body {
     background-color: #444;
 }
 
-bhai{
-
-    height: 70px;
-    width: 320px;
-    align: center;
-    justify-content:center;
-    align-items: center;
-    margin: 21px;
-    background: linear-gradient(to bottom, #ff9933 0%, #ff9999 100%);
+.background-container {
+    position: relative;
+    text-align: center;
 }
 
+.image-container img {
+    max-width: 100%; 
+    height: auto;
+    border: 2px solid #ddd; 
+    border-radius: 8px;
+}
+
+.button-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px; 
+}
+
+.play-btn {
+    height: 70px;
+    width: 320px;
+    background: linear-gradient(to bottom, #ff9933 0%, #ff9999 100%);
+    border: none; 
+    color: #fff; 
+    font-size: 1em;
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.play-btn a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+}
+
+.play-btn:hover {
+    opacity: 0.8; 
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.footer-section button {
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-section button:hover {
+    background-color: #0056b3;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.8em;
+}
